@@ -21,7 +21,7 @@ Includes a professional UI overlay (top bar, FPS display, exit button) and an al
 ---
 
 ## 📸 Screenshots
-> Add your screenshots inside `/screenshots` and update filenames if needed.
+
 
 ### Intro Screen
 ![Intro](screenshots/intro.png)
