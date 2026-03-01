@@ -54,8 +54,8 @@ Includes a professional UI overlay (top bar, FPS display, exit button) and an al
 
 ### 1) Clone the repository
 ```bash
-git clone https://github.com/<your-username>/AI_Drowsiness_Detection.git
-cd AI_Drowsiness_Detection
+git clone https://github.com/dharneshpriyan/AI-Drowsiness-Detection.git
+cd AI-Drowsiness-Detection
 ```
 ### 2) Install Dependencies
 ```bash
