@@ -146,7 +146,6 @@ If head turns beyond threshold →
 
 ```bash
 git clone https://github.com/dharneshpriyan/AI-Drowsiness-Detection.git
-cd AI-Drowsiness-Detection
 ```
 ### 2) Open Dir
 
