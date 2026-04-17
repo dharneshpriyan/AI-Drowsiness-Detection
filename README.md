@@ -171,9 +171,9 @@ py main.py
 ### ⌨️ Controls
 
 - 🎮 Controls
-`Action	Key`
-`Exit Detection	Q`
-`Exit App	EXIT button`
+
+`Exit Detection --	Q`
+`Exit App	-- EXIT button`
 
 ### 🛠️ Tech Stack
 
