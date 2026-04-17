@@ -170,10 +170,10 @@ py main.py
 
 ### ⌨️ Controls
 
-`🎮 Controls
-Action	Key
-Exit Detection	Q
-Exit App	EXIT button`
+- 🎮 Controls
+`Action	Key`
+`Exit Detection	Q`
+`Exit App	EXIT button`
 
 ### 🛠️ Tech Stack
 
