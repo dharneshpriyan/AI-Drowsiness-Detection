@@ -142,20 +142,25 @@ If head turns beyond threshold →
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone Repository
+### 1️) Clone Repository
 
 ```bash
 git clone https://github.com/dharneshpriyan/AI-Drowsiness-Detection.git
 cd AI-Drowsiness-Detection
 ```
+### 2) Open Dir
 
-### 2) Install Dependencies
+```bash
+cd AI-Drowsiness-Detection
+```
+
+### 3) Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3) Run the Project
+### 4) Run the Project
 
 ```bash
 py main.py
