@@ -1,5 +1,26 @@
-opencv-python
-mediapipe
-numpy
-pandas
+# Core Computer Vision
+opencv-python==4.9.0.80
+mediapipe==0.10.14
+numpy==1.26.4
+
+# GUI (Premium UI)
+PySide6==6.7.0
+
+# Sound Alerts
 playsound==1.2.2
+
+# QR Scanner (for camera connect)
+opencv-python-headless==4.9.0.80
+pyzbar==0.1.9
+
+# WhatsApp Alerts (optional)
+pywhatkit==5.4
+
+# HTTP (IP camera stream)
+requests==2.31.0
+
+# Data handling (logs / driver details)
+pandas==2.2.2
+
+# Threading / utils (built-in but safe include)
+setuptools>=65.0.0

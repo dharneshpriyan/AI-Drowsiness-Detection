@@ -1,6 +1,6 @@
 AI Drowsiness Detection System
 
-Copyright (C) 2026 Dharnesh Priyan
+Copyright (C) 2026 Dharnesh Priyan J
 
 MIT License
 
