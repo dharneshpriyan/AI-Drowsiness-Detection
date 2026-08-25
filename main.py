@@ -1921,25 +1921,44 @@ class WelcomePage(AnimatedGradientWidget):
         project_name.setFont(QFont("Segoe UI", 19, QFont.Bold))
         project_name.setStyleSheet(f"color: {TEXT_MAIN}; border:none;")
 
-        project_sub = QLabel("Final Year Project  |  Computer Vision  |  Safety Monitoring")
+        project_sub = QLabel("Individual Project  |  Desktop + Web Platform  |  Safety Monitoring")
         project_sub.setFont(QFont("Segoe UI", 11))
         project_sub.setStyleSheet(f"color: {TEXT_SOFT}; border:none;")
 
-        college_name = QLabel("Sri Raaja Raajan College of Engineering & Technology")
-        college_name.setFont(QFont("Segoe UI", 12, QFont.Bold))
-        college_name.setStyleSheet("""
-            QLabel {
-                color: #FFBE4F;
-                border: none;
-                background: transparent;
-                letter-spacing: 0.3px;
+        web_platform_btn = QPushButton("◈  OPEN WEB PLATFORM  •  ADMIN DASHBOARD")
+        web_platform_btn.setCursor(Qt.PointingHandCursor)
+        web_platform_btn.setToolTip("Open the AI Drowsiness Detection web platform and admin dashboard")
+        web_platform_btn.setMinimumHeight(46)
+        web_platform_btn.setFont(QFont("Segoe UI", 10, QFont.Bold))
+        web_platform_btn.setStyleSheet("""
+            QPushButton {
+                color: #071522;
+                border: 1px solid rgba(154, 238, 255, 0.90);
+                border-radius: 14px;
+                padding: 8px 16px;
+                background: qlineargradient(
+                    x1:0, y1:0, x2:1, y2:0,
+                    stop:0 #22D7FF,
+                    stop:0.55 #5C9CFF,
+                    stop:1 #A16FFF
+                );
+            }
+            QPushButton:hover {
+                color: #FFFFFF;
+                border: 1px solid #FFFFFF;
+                background: qlineargradient(
+                    x1:0, y1:0, x2:1, y2:0,
+                    stop:0 #42E5FF,
+                    stop:0.55 #78AEFF,
+                    stop:1 #B987FF
+                );
+            }
+            QPushButton:pressed {
+                background: #2999D4;
             }
         """)
-        self.college_glow = QGraphicsDropShadowEffect()
-        self.college_glow.setBlurRadius(18)
-        self.college_glow.setOffset(0, 0)
-        self.college_glow.setColor(QColor(255, 190, 79, 110))
-        college_name.setGraphicsEffect(self.college_glow)
+        web_platform_btn.clicked.connect(lambda: webbrowser.open("https://dharnesh-web.onrender.com"))
+        add_glow(web_platform_btn, QColor(43, 203, 255, 85), 24)
 
         logo_holder = QFrame()
         logo_holder.setStyleSheet("""
@@ -2005,9 +2024,9 @@ class WelcomePage(AnimatedGradientWidget):
         logo_orb_layout.addWidget(self.logo_label)
         logo_layout.addWidget(self.logo_orb, alignment=Qt.AlignCenter)
 
-        team_title = QLabel("Project Team")
-        team_title.setFont(QFont("Segoe UI", 14, QFont.Bold))
-        team_title.setStyleSheet("""
+        developer_title = QLabel("Developed By")
+        developer_title.setFont(QFont("Segoe UI", 14, QFont.Bold))
+        developer_title.setStyleSheet("""
             QLabel {
                 color: #23D9FF;
                 border: none;
@@ -2016,9 +2035,9 @@ class WelcomePage(AnimatedGradientWidget):
             }
         """)
 
-        team_box = QFrame()
-        team_box.setFixedHeight(148)
-        team_box.setStyleSheet("""
+        developer_box = QFrame()
+        developer_box.setFixedHeight(148)
+        developer_box.setStyleSheet("""
             QFrame {
                 background: qlineargradient(
                     x1:0, y1:0, x2:1, y2:1,
@@ -2029,42 +2048,62 @@ class WelcomePage(AnimatedGradientWidget):
                 border-radius: 20px;
             }
         """)
-        add_shadow(team_box, blur=34, y=8)
-        team_layout = QVBoxLayout(team_box)
-        team_layout.setContentsMargins(18, 12, 18, 12)
-        team_layout.setSpacing(4)   
+        add_shadow(developer_box, blur=34, y=8)
+        developer_layout = QVBoxLayout(developer_box)
+        developer_layout.setContentsMargins(18, 12, 18, 12)
+        developer_layout.setSpacing(8)
 
-        team_members = [
-            "Bharath R",
-            "Subalakshmi J",
-            "Ushamalini K",
-            "Dharnesh Priyan J"
-        ]
+        developer_name = QLabel("Dharnesh Priyan J")
+        developer_name.setFont(QFont("Segoe UI", 12, QFont.Bold))
+        developer_name.setStyleSheet("color: #F1F7FF; border: none; background: transparent;")
+        developer_layout.addWidget(developer_name)
 
-        for member in team_members:
-            row = QLabel(f"•  {member}")
-            row.setFont(QFont("Segoe UI", 11, QFont.DemiBold))
-            row.setStyleSheet("""
-                QLabel {
-                    color: #F1F7FF;
-                    border: none;
-                    background: transparent;
-                    padding: 4px 8px;
+        def social_button(icon, label, url, tooltip):
+            button = QPushButton(f"{icon}  {label}")
+            button.setCursor(Qt.PointingHandCursor)
+            button.setToolTip(tooltip)
+            button.setMinimumHeight(36)
+            button.setFont(QFont("Segoe UI", 9, QFont.DemiBold))
+            button.setStyleSheet("""
+                QPushButton {
+                    color: #DCEBFA;
+                    background: rgba(24, 210, 255, 0.06);
+                    border: 1px solid rgba(24, 210, 255, 0.20);
+                    border-radius: 10px;
+                    padding: 5px 10px;
+                    text-align: left;
                 }
-                QLabel:hover {
-                    color: #35DDFF;
-                    background-color: rgba(24, 210, 255, 0.05);
-                    border-radius: 8px;
+                QPushButton:hover {
+                    color: #FFFFFF;
+                    background: rgba(24, 210, 255, 0.20);
+                    border: 1px solid #23D9FF;
+                }
+                QPushButton:pressed {
+                    background: rgba(24, 210, 255, 0.30);
                 }
             """)
-            team_layout.addWidget(row)
+            button.clicked.connect(lambda checked=False, link=url: webbrowser.open(link))
+            return button
+
+        first_social_row = QHBoxLayout()
+        first_social_row.setSpacing(8)
+        first_social_row.addWidget(social_button("✉", "Email", "mailto:dharneshpriyan.j@gmail.com", "Send an email to Dharnesh Priyan J"))
+        first_social_row.addWidget(social_button("◈", "Portfolio", "https://dharnesh-portfolio.vercel.app", "Open portfolio website"))
+
+        second_social_row = QHBoxLayout()
+        second_social_row.setSpacing(8)
+        second_social_row.addWidget(social_button("in", "LinkedIn", "https://www.linkedin.com/in/dharnesh-priyan", "Open LinkedIn profile"))
+        second_social_row.addWidget(social_button("◉", "GitHub", "https://github.com/dharneshpriyan", "Open GitHub profile"))
+
+        developer_layout.addLayout(first_social_row)
+        developer_layout.addLayout(second_social_row)
 
         rc_layout.addWidget(project_name)
         rc_layout.addWidget(project_sub)
-        rc_layout.addWidget(college_name)
+        rc_layout.addWidget(web_platform_btn)
         rc_layout.addWidget(logo_holder)
-        rc_layout.addWidget(team_title)
-        rc_layout.addWidget(team_box)
+        rc_layout.addWidget(developer_title)
+        rc_layout.addWidget(developer_box)
         rc_layout.addStretch()
 
         body.addLayout(left, 3)

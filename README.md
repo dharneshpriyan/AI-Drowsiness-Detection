@@ -3,6 +3,14 @@
 A **premium real-time AI driver monitoring system** built using  
 **OpenCV + MediaPipe + PySide6**, designed for intelligent fatigue detection and modern desktop application experience.
 
+An individual project developed by **Dharnesh Priyan J**.
+
+- Email: [dharneshpriyan.j@gmail.com](mailto:dharneshpriyan.j@gmail.com)
+- Portfolio: [dharnesh-portfolio.vercel.app](https://dharnesh-portfolio.vercel.app)
+- LinkedIn: [linkedin.com/in/dharnesh-priyan](https://www.linkedin.com/in/dharnesh-priyan)
+- GitHub: [github.com/dharneshpriyan](https://github.com/dharneshpriyan)
+- Project Web Platform: [dharnesh-web.onrender.com](https://dharnesh-web.onrender.com) — includes an admin dashboard.
+
 ---
 
 ## ✨ Overview
@@ -14,6 +22,10 @@ This system detects driver drowsiness using:
 - 🧭 Head pose (Yaw angle)
 
 Now upgraded with a **modern professional dashboard UI**, real-time alerts, and smart monitoring workflow.
+
+## 🌐 Web Platform
+
+This project is also available as a web platform at [dharnesh-web.onrender.com](https://dharnesh-web.onrender.com). It supports the same drowsiness-monitoring workflow as the desktop application and additionally provides an **Admin Dashboard** for web-based administration.
 
 ---
 
@@ -28,6 +40,7 @@ Now upgraded with a **modern professional dashboard UI**, real-time alerts, and 
 ✨ Loading screen + smooth transitions  
 ✨ Fullscreen detection system  
 ✨ EXE installer support
+✨ Web platform with an Admin Dashboard
 
 ---
 
@@ -195,7 +208,7 @@ This project is intended for:
 
 - 🚗 Driver Monitoring Systems
 - 🛣️ Road Safety Applications
-- 🎓 Final Year Engineering Project
+- 💼 Individual portfolio project
 - 🧠 Computer Vision Research
 
 ### 📌 Future Improvements
@@ -219,5 +232,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ### 👨‍💻 Developer
 
 `Dharnesh Priyan J`
-CSE Final Year
-Sri Raaja Raajan College of Engineering & Technology
+Individual Developer
+
+Email: [dharneshpriyan.j@gmail.com](mailto:dharneshpriyan.j@gmail.com)
+Portfolio: [dharnesh-portfolio.vercel.app](https://dharnesh-portfolio.vercel.app)
+LinkedIn: [linkedin.com/in/dharnesh-priyan](https://www.linkedin.com/in/dharnesh-priyan)
+GitHub: [github.com/dharneshpriyan](https://github.com/dharneshpriyan)
+
+Project Web Platform: [dharnesh-web.onrender.com](https://dharnesh-web.onrender.com) — includes an Admin Dashboard.

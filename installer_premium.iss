@@ -1,13 +1,14 @@
 #define MyAppName "AI Drowsiness Detection"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "2.1.0"
 #define MyAppPublisher "Dharnesh Priyan J"
-#define MyAppURL "https://github.com/dharneshpriyan"
+#define MyAppURL "https://dharnesh-web.onrender.com"
 #define MyAppExeName "AI Drowsiness Detection.exe"
-#define MySourceDir "C:\Users\acer\Desktop\AI Drowsiness Detection\dist\AI Drowsiness Detection"
+
+#define MySourceDir "D:\AI Drowsiness Detection Release"
 #define MyProjectDir "C:\Users\acer\Desktop\AI Drowsiness Detection"
 #define MyIconFile "C:\Users\acer\Desktop\AI Drowsiness Detection\assets\ds.ico"
 #define MyLicenseFile "C:\Users\acer\Desktop\AI Drowsiness Detection\license.txt"
-#define MyOutputDir "C:\Users\acer\Desktop\AI Drowsiness Detection\installer_output"
+#define MyOutputDir "D:\AI Drowsiness Detection Installer"
 
 [Setup]
 AppId={{8E2E1E74-8D3B-4C32-9D6E-AIDROWSINESS2026}}
@@ -38,7 +39,7 @@ DisableFinishedPage=no
 ShowLanguageDialog=no
 VersionInfoVersion={#MyAppVersion}
 VersionInfoCompany={#MyAppPublisher}
-VersionInfoDescription=AI Driver Drowsiness Detection System Installer
+VersionInfoDescription=AI Driver Drowsiness Detection Professional Desktop Application Installer
 VersionInfoProductName={#MyAppName}
 VersionInfoProductVersion={#MyAppVersion}
 SetupLogging=yes
